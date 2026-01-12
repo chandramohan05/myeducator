@@ -1,0 +1,11 @@
+# Next.js
+.next/
+out/
+
+# Node
+node_modules/
+
+# Env
+.env
+.env.local
+.vercel
