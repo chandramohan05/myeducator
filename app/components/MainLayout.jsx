@@ -1,6 +1,6 @@
 // components/MainLayout.jsx
-import { Navbar } from "./Navbar";
-import { Footer } from "./Footer"; // make sure Footer import is correct too
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function MainLayout({ children }) {
   return (
