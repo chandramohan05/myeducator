@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { format } from "date-fns";
 import { Calendar } from "./Calendar";
@@ -16,33 +18,29 @@ import { Label } from "../ui/label";
 
 export default function ScheduleView({ userType }) {
   const [selectedEvent, setSelectedEvent] = useState(null);
-  
-  // Sample events - in a real app, these would come from your backend
+
   const events = [
     {
       id: 1,
-      title: 'Web Development Basics',
-      type: 'class',
-      date: '2024-10-30T10:00:00',
-      description: 'Introduction to HTML and CSS',
-      teacher: 'Sarah Johnson',
-      duration: '1 hour'
+      title: "Web Development Basics",
+      type: "class",
+      date: "2024-10-30T10:00:00",
+      description: "Introduction to HTML and CSS",
+      teacher: "Sarah Johnson",
+      duration: "1 hour",
     },
     {
       id: 2,
-      title: 'JavaScript Fundamentals',
-      type: 'class',
-      date: '2024-10-30T14:00:00',
-      description: 'Basic JavaScript concepts and syntax',
-      teacher: 'Mike Peterson',
-      duration: '1.5 hours'
+      title: "JavaScript Fundamentals",
+      type: "class",
+      date: "2024-10-30T14:00:00",
+      description: "Basic JavaScript concepts and syntax",
+      teacher: "Mike Peterson",
+      duration: "1.5 hours",
     },
-    // Add more sample events as needed
   ];
 
-  const handleEventClick = (event) => {
-    setSelectedEvent(event);
-  };
+   const handleEventClick = (event) => setSelectedEvent(event);
 
   return (
     <div className="space-y-4">
