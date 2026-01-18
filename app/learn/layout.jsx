@@ -1,5 +1,5 @@
 // app/courses/layout.jsx
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 
 export default function CoursesLayout({ children }) {
   return (

@@ -10,7 +10,7 @@ export const metadata = {
 
 import Link from "next/link";
 // import { Button } from "../components/ui/button";
-import { Navbar } from "../components/Navbar";
+import Navbar from "../components/Navbar";
 
 export default function AuthLayout({ children }) {
   return (

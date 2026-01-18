@@ -1,5 +1,5 @@
 // app/dashboard/layout.jsx
-import { Navbar } from "@/app/components/Navbar";
+import Navbar from '@/app/components/Navbar';
 import Footer from "@/app/components/Footer"; // ✅ footer import
 
 export default function DashboardLayout({ children }) {
