@@ -1,9 +1,8 @@
-// components/calendar/ScheduleView.jsx
-"use client"
-import { useState } from 'react';
-import { Calendar } from './Calendar';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Button } from '../ui/button';
+import { useState } from "react";
+import { format } from "date-fns";
+import { Calendar } from "./Calendar";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Button } from "../ui/button";
 import {
   Dialog,
   DialogContent,
@@ -11,11 +10,11 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../ui/dialog';
-import { Input } from '../ui/input';
-import { Label } from '../ui/label';
+} from "../ui/dialog";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 
-export function ScheduleView({ userType }) {
+export default function ScheduleView({ userType }) {
   const [selectedEvent, setSelectedEvent] = useState(null);
   
   // Sample events - in a real app, these would come from your backend

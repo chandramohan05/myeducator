@@ -1,4 +1,5 @@
 // components/performance/StudentPerformance.jsx
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { GradesChart } from "./GradesChart";
