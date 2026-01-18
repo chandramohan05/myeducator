@@ -1,4 +1,3 @@
-// components/performance/StudentPerformance.jsx
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
@@ -9,7 +8,7 @@ import { LearningProgress } from "./LearningProgress";
 import { Button } from "../ui/button";
 import { Download, Calendar, TrendingUp, Award } from "lucide-react";
 
-export function StudentPerformance({ studentId }) {
+export default function StudentPerformance({ studentId }) {
   const performanceStats = {
     overallGrade: 85,
     courseCompletion: 72,
